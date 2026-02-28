@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To My Dearest Aliha</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #ffe6f2;
+    overflow-x: hidden;
+}
+
+/* Floating cute elements */
+.emoji {
+    position: fixed;
+    font-size: 28px;
+    animation: float 6s infinite ease-in-out alternate;
+    z-index: 0;
+}
+
+@keyframes float {
+    from { transform: translateY(0px) rotate(0deg); }
+    to { transform: translateY(-40px) rotate(20deg); }
+}
+
+/* Page Sections */
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ff3399;
+    background: rgba(255,255,255,0.9);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px pink;
+}
+
+p {
+    max-width: 850px;
+    margin: 15px auto;
+    font-size: 20px;
+    color: #cc0066;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Button */
+button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff66b2;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 15px pink;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff3399;
+    transform: scale(1.1);
+}
+
+/* Second Page initially hidden */
+#page2 {
+    display: none;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 0 20px pink;
+}
+</style>
+
+<script>
+function goToPage2() {
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "flex";
+    window.scrollTo(0,0);
+}
+</script>
+
+</head>
+<body>
+
+<!-- Cute floating background -->
+<div class="emoji" style="top:10%; left:5%;">💗</div>
+<div class="emoji" style="top:20%; left:80%;">☁️</div>
+<div class="emoji" style="top:70%; left:10%;">🌸</div>
+<div class="emoji" style="top:60%; left:75%;">🧸</div>
+<div class="emoji" style="top:40%; left:30%;">💖</div>
+<div class="emoji" style="top:80%; left:50%;">✨</div>
+<div class="emoji" style="top:15%; left:55%;">☁️</div>
+<div class="emoji" style="top:75%; left:85%;">🌷</div>
+<div class="emoji" style="top:35%; left:90%;">💞</div>
+<div class="emoji" style="top:55%; left:15%;">🐻</div>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+    <h1>TO MY DEAREST ALIHA🌸💗</h1>
+
+    <p>
+    This little space is made just to remind you how incredibly special and appreciated you are.
+    </p>
+
+    <button onclick="goToPage2()">Click Here</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+
+    <img src="https://i.postimg.cc/jqQpMkCn/Whats-App-Image-2026-02-28-at-09-18-26-(1).jpg" alt="">
+    <img src="https://i.postimg.cc/FKXXKfKP/Whats-App-Image-2026-02-28-at-09-31-42.jpg" alt="">
+    <img src="https://i.postimg.cc/RFGTHfVt/Whats-App-Image-2026-02-28-at-09-18-26.jpg" alt="Aliha Photo 3">
+
+    <p>
+    Aliha, your smile carries a kind of magic that instantly lifts the mood of anyone around you.
+    It is natural, effortless, and incredibly beautiful.
+    </p>
+
+    <p>
+    The way you care about people shows the depth of your heart.
+    You think about others, you understand emotions, and you handle situations with quiet strength.
+    </p>
+
+    <p>
+    Your laughter feels like sunlight on a cloudy day —
+    bright, comforting, and impossible to ignore.
+    </p>
+
+    <p>
+    You have this rare ability to make someone feel heard and understood.
+    That is not common. That is something truly special.
+    </p>
+
+    <p>
+    Your personality shines in ways that go beyond appearance.
+    It is your kindness, your intelligence, and your gentle nature that make you unforgettable.
+    </p>
+
+    <p>
+    You inspire positivity without even trying.
+    The way you carry yourself reflects grace and quiet confidence.
+    </p>
+
+    <p>
+    Being around you feels peaceful.
+    You bring warmth, comfort, and happiness in the simplest ways.
+    </p>
+
+    <p>
+    You are more than just a close friend —
+    you are deeply appreciated, admired, and cherished beyond words.
+    </p>
+
+</div>
+
+</body>
+</html>
